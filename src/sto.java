@@ -1,10 +1,15 @@
+import java.util.Scanner;
+
 public class sto {
     public static void main(String[] args) {
-        int sum = 0;
+        Scanner scanner = new Scanner(System.in);
 
-        for (int i = 1; i <= 100; i = i + 1) {
-            sum = sum + i;
+        long sum = 0;
+
+        for (int i = 0; i < 100; i++) {
+            sum += scanner.nextLong();
         }
+
         System.out.println(sum);
     }
 }
